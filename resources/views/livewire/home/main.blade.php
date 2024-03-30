@@ -5,7 +5,7 @@
             <div class=" flex w-[788px] {{ isset($result) == true ? 'scroller' : '' }}">
                 <div class="-mt-1 w-[394px] ml-4 pl-2">
                     <div class="space-y-1">
-                        <div class=" text-3xl font-bold poppins-medium text-center">برسی وضعیت اکانتت؟</div>
+                        <div class=" text-3xl font-bold poppins-medium text-center">بررسی وضعیت اکانتت؟</div>
                         <div class="text-base text-center">لطفا اطلاعات مورد نیاز رو وارد کنید</div>
                     </div>
                     <form wire:submit.prevent="search" class="">
@@ -24,13 +24,13 @@
 
 
 
-                        <button type="submit" class="font-semibold text-base w-full bg-black text-white p-4   rounded-xl">برسی!</button>
+                        <button type="submit" class="font-semibold text-base w-full bg-black text-white p-4   rounded-xl">بررسی!</button>
                     </form>
                 </div>
                 @if(isset($result))
 
                 <div class="space-y-8 w-[394px]">
-                    <div class="text-3xl font-bold poppins-medium">نتیجه ی برسی</div>
+                    <div class="text-3xl font-bold poppins-medium">نتیجه ی بررسی</div>
 
                     <div>
                         <div class="flex items-center space-x-2 ">
