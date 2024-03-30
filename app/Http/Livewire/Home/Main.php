@@ -57,7 +57,7 @@ class Main extends Component
 
             $cookies = $response->getHeader('Set-Cookie');
 
-            $cookieString = $cookies[1];
+            $cookieString = $cookies[0];
 
             $cookies = explode(';', $cookieString);
 
