@@ -17,12 +17,12 @@ This set of fonts are used in this project under the license: (.....)
 *	
 **/
 
+
 @font-face {
 	font-family: IRANSans;
 	font-style: normal;
 	font-weight: bold;
-	src: 
-		 url('../fonts/woff2/IRANSansWeb_Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+	src: url('../fonts/woff2/IRANSansWeb_Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
 
 }
 @font-face {
@@ -30,5 +30,13 @@ This set of fonts are used in this project under the license: (.....)
 	font-style: normal;
 	font-weight: 500;
 	src:url('../fonts/woff2/IRANSansWeb_Medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+
+}
+
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: normal;
+	src:url('../fonts/woff2/IRANSansWeb.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
 
 }
