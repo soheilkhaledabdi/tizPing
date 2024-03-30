@@ -42,7 +42,7 @@ class Main extends Component
 
         $url_parse = parse_url($this->search_id);
         $this->server = $url_parse['host'];
-        $this->search_id = $url_parse['user'];
+        $search_id =  $url_parse['user'];
         $s = Servers::query()->where('host', $this->server)->first();
 
         if ($s) {
@@ -76,13 +76,9 @@ class Main extends Component
                     'Cookie' => $sessionCookie,
                 ])->get('http://' . $s->host . ':' . $s->port . '/panel/API/inbounds/list');
 
-                // dd('http://' . $s->host . ':' . $s->port . '/panel/API/inbounds/list');
-
-                // dd($response->json());
-
                 if ($response->successful()) {
                     $data = $response->json();
-                    $clientIdToSearch = $this->search_id;
+                    $clientIdToSearch = $search_id;
 
                     foreach ($data['obj'] as $item) {
                         $clients = json_decode($item['settings']);

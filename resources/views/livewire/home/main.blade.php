@@ -17,7 +17,7 @@
 
                         @if($notFound)
                         <div class="alert mt-2 alert-warning alert-dismissible fade show" dir="rtl" role="alert">
-                            <strong>خطایی رخ داده:</strong> ایدی(UUID) مذکور در سرور اشاره شده پیدا نشد
+                            <strong>کانفیگ مورد نظر پیدا نشد</strong>
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                         @endif
