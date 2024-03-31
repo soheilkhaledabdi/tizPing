@@ -5,13 +5,13 @@
             <div id="scroller" class="flex w-[788px] {{ isset($result) == true ? 'scroller' : '' }}">
                 <div class="-mt-1 w-[394px] ml-4 pl-2">
                     <div class="space-y-1">
-                        <div class=" text-3xl font-bold poppins-medium text-center">بررسی وضعیت اکانتت؟</div>
+                        <div class=" text-3xl font-bold poppins-medium text-center">بررسی وضعیت اکانت؟</div>
                         <div class="text-base text-center">لطفا اطلاعات مورد نیاز رو وارد کنید</div>
                     </div>
                     <form wire:submit.prevent="search" class="">
 
                         <div class="my-8">
-                            <input class="w-full border-[#D8DADC] border p-4 rounded-xl" type="text" placeholder="لطفا کانفیگ خود را وارد کنید" wire:model="search_id">
+                            <input class="w-full border-[#D8DADC] border p-4 rounded-xl" type="text" placeholder="لطفا لینک کانفیگ خود را وارد کنید" wire:model="search_id">
                             @error('search_id') <span>{{ $message }}</span> @enderror
                         </div>
 
