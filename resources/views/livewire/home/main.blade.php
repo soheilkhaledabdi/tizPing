@@ -2,7 +2,7 @@
     <div class="bg-white head p-2 rounded-xl flex flex-col w-[394px] relative ">
         <div class="flex   p-4 felx justify-center "><img src="img/logo.png" alt="" style="width: 80%;"></div>
         <div class="frame w-[394px] overflow-hidden">
-            <div class=" flex w-[788px] {{ isset($result) == true ? 'scroller' : '' }}">
+            <div id="scroller" class="flex w-[788px] {{ isset($result) == true ? 'scroller' : '' }}">
                 <div class="-mt-1 w-[394px] ml-4 pl-2">
                     <div class="space-y-1">
                         <div class=" text-3xl font-bold poppins-medium text-center">بررسی وضعیت اکانتت؟</div>
@@ -50,9 +50,11 @@
                                     </div>
                                 </li>
                                 <li class="flex items-center w-full justify-between space-x-2">
-                                    <span class="ml-2">حجم باقی مانده:</span>
+                                    <span class="ml-2">حجم مصرفی:</span>
                                     <span>{{ sizeFormat($result['up'] + $result['down']) }}</span>
                                 </li>
+
+                                <button onclick="document.getElementById('scroller').className='back flex w-[788px]'" class="font-semibold text-base w-full bg-black text-white p-4   rounded-xl">بازگشت</button>
 
                             </ul>
 

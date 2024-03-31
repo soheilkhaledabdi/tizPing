@@ -934,7 +934,7 @@ h1, h2, h3, h4, h5, h6,input, textarea {
 }
 
 .all{
-  background-image: url(../img/bg.png);
+  background-image: url(../img/bg.jpg);
 }
 
 .checker {
@@ -1024,4 +1024,16 @@ h1, h2, h3, h4, h5, h6,input, textarea {
   .dark\:ring-slate-200\/20 {
     --tw-ring-color: rgb(226 232 240 / 0.2);
   }
+}
+
+@keyframes rev {
+  from {transform: translateX(0px);}
+  to {transform: translateX(330px);}
+}
+.frame .back{
+  animation-play-state: running;
+  animation-duration: 1.5s;
+  animation-name: rev;
+  animation-direction: reverse;
+  
 }
