@@ -24,7 +24,7 @@ class Main extends Component
     }
 
     protected $rules = [
-        'search_id' => ['required', 'string','regex:/^vless:\/\/[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}@[\w.-]+:\d+\?/'],
+        'search_id' => ['required', 'string','regex:/^vless:\/\/[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}@[\w.-]+:?/'],
     ];
 
     public function messages()
