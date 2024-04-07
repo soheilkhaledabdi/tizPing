@@ -20,30 +20,6 @@
   /* 2 */
 }
 
-
-@font-face {
-	font-family: IRANSans;
-	font-style: normal;
-	font-weight: bold;
-	src: url('../fonts/woff2/IRANSansWeb_Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-
-}
-@font-face {
-	font-family: IRANSans;
-	font-style: normal;
-	font-weight: 500;
-	src:url('../fonts/woff2/IRANSansWeb_Medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-
-}
-
-@font-face {
-	font-family: IRANSans;
-	font-style: normal;
-	font-weight: normal;
-	src:url('../fonts/woff2/IRANSansWeb.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-
-}
-
 ::before,
 ::after {
   --tw-content: '';
@@ -568,10 +544,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.static {
-  position: static;
-}
-
 .absolute {
   position: absolute;
 }
@@ -586,15 +558,6 @@ video {
 
 .top-0 {
   top: 0px;
-}
-
-.z-10 {
-  z-index: 10;
-}
-
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 
 .-mr-1 {
@@ -617,16 +580,8 @@ video {
   margin-left: 1rem;
 }
 
-.-mt-9 {
-  margin-top: -2.25rem;
-}
-
-.-mt-2 {
-  margin-top: -0.5rem;
-}
-
-.-mt-12 {
-  margin-top: -3rem;
+.mr-6 {
+  margin-right: 1.5rem;
 }
 
 .flex {
@@ -641,10 +596,6 @@ video {
   height: 0.75rem;
 }
 
-.h-40 {
-  height: 10rem;
-}
-
 .h-full {
   height: 100%;
 }
@@ -657,12 +608,16 @@ video {
   width: 0.75rem;
 }
 
-.w-\[394px\] {
-  width: 394px;
+.w-\[314px\] {
+  width: 314px;
 }
 
-.w-\[788px\] {
-  width: 788px;
+.w-\[410px\] {
+  width: 410px;
+}
+
+.w-\[644px\] {
+  width: 644px;
 }
 
 .w-full {
@@ -728,12 +683,6 @@ video {
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
-.space-y-1 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
@@ -759,9 +708,9 @@ video {
   border-color: rgb(216 218 220 / var(--tw-border-opacity));
 }
 
-.bg-\[\#F2F3F3\] {
+.bg-\[\#131221\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(242 243 243 / var(--tw-bg-opacity));
+  background-color: rgb(19 18 33 / var(--tw-bg-opacity));
 }
 
 .bg-black {
@@ -789,12 +738,13 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.p-2 {
-  padding: 0.5rem;
-}
-
 .p-4 {
   padding: 1rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .px-4 {
@@ -807,25 +757,9 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.pl-2 {
-  padding-left: 0.5rem;
-}
-
-.pb-16 {
-  padding-bottom: 4rem;
-}
-
-.pt-4 {
-  padding-top: 1rem;
-}
-
-.text-center {
-  text-align: center;
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
 }
 
 .text-3xl {
@@ -841,11 +775,6 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .font-bold {
@@ -868,6 +797,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.accent-black {
+  accent-color: #000;
 }
 
 .opacity-75 {
@@ -911,22 +844,6 @@ video {
 body {
   font-family: IRANSans !important;
   font-weight: 300;
-  background-image: url(../img/bg-c.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.head{
-  font-family: IRANSans !important;
-  font-weight: 300;
-  background-image: url(../img/head.png);
-  background-position: top center;
-  background-repeat: no-repeat;
-}
-
-.head img{
-  width: auto;
-  height: auto;
 }
 
 h1, h2, h3, h4, h5, h6,input, textarea {
@@ -934,7 +851,10 @@ h1, h2, h3, h4, h5, h6,input, textarea {
 }
 
 .all{
+  background-color: #131221;
   background-image: url(../img/bg.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .checker {
@@ -1016,7 +936,24 @@ h1, h2, h3, h4, h5, h6,input, textarea {
   }
 
   to {
-    transform: translateX(402px);
+    transform: translateX(330px);
+  }
+}
+
+.hover\:text-blue-700:hover {
+  --tw-text-opacity: 1;
+  color: rgb(29 78 216 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .sm\:w-full {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:w-\[410px\] {
+    width: 410px;
   }
 }
 
@@ -1025,7 +962,6 @@ h1, h2, h3, h4, h5, h6,input, textarea {
     --tw-ring-color: rgb(226 232 240 / 0.2);
   }
 }
-
 @keyframes rev {
   from {transform: translateX(0px);}
   to {transform: translateX(330px);}

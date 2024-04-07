@@ -16,5 +16,15 @@
     {{ $slot }}
 </body>
 @livewireScripts
+<script>
+  function toggleScrollerClass() {
+    const scroller = document.getElementById('scroller');
+    if (scroller) {
+      scroller.classList.toggle('back');
+      scroller.classList.toggle('flex');
+      scroller.classList.toggle('w-[644px]');
+    }
+  }
+</script>
 
 </html>

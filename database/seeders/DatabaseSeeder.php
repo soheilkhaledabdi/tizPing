@@ -16,12 +16,12 @@ class DatabaseSeeder extends Seeder
     {
         User::query()->create([
            'name' => 'admin admin',
-            'email' => 'aryarashedi10@gmail.com',
-            'password' => Hash::make('03104486')
+            'email' => 'admin@gmail.com',
+            'password' => Hash::make('admin_admin')
         ]);
 
-        $this->call([
-           KeyValueSeeder::class
-        ]);
+        // $this->call([
+        //    KeyValueSeeder::class
+        // ]);
     }
 }
