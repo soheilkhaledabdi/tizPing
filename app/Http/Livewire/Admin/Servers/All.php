@@ -44,10 +44,10 @@ class All extends Component
 
     public function mount(){
     $settings = \App\Models\Settings::all();
-    $this->username = $settings->firstWhere('key','server_username')->value;
-    $this->password = $settings->firstWhere('key','server_password')->value;
-    $this->panel_username = $settings->firstWhere('key','panel_username')->value;
-    $this->panel_password = $settings->firstWhere('key','panel_password')->value;
+    $this->username = $settings->firstWhere('key','server_username')?->value;
+    $this->password = $settings->firstWhere('key','server_password')?->value;
+    $this->panel_username = $settings->firstWhere('key','panel_username')?->value;
+    $this->panel_password = $settings->firstWhere('key','panel_password')?->value;
 }
     public function save()
     {
