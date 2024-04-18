@@ -18,10 +18,10 @@ class Settings extends Component
 
     public function mount(){
             $settings = \App\Models\Settings::all();
-        $this->server_username = $settings->firstWhere('key','server_username')->value;
-        $this->server_password = $settings->firstWhere('key','server_password')->value;
-        $this->panel_username = $settings->firstWhere('key','panel_username')->value;
-        $this->panel_password = $settings->firstWhere('key','panel_password')->value;
+        $this->server_username = $settings->firstWhere('key','server_username')?->value;
+        $this->server_password = $settings->firstWhere('key','server_password')?->value;
+        $this->panel_username = $settings->firstWhere('key','panel_username')?->value;
+        $this->panel_password = $settings->firstWhere('key','panel_password')?->value;
     }
 
 
